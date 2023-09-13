@@ -1,6 +1,6 @@
 # Introduction
 
-- This is a simple CLI weather application built using the weather API in Go
+- This is a simple CLI + Web weather application built using the weather API in Go
 
 # How to USE?
 
@@ -8,7 +8,7 @@
 - `cd weather`
 - open the main.go file and in the URL section,add your desired location and then
 - run this command in the terminal `go run main.go`
-- You will see this output
+- You will see this output as well as you can see the same output in your web browser as well
 
 ```
 Bhopal, India : 25°C, Mist
@@ -21,9 +21,7 @@ Bhopal, India : 25°C, Mist
 # How to contribute?
 
 ### Features to Add
-
-1. Currently it only fetches weather report for a single location, we neeed to add a variable in a the URL so that we can pass multiple locations.
-2. Import the color module so that if shows red after reaching to a thresold value.
+1. Import the color module so that if shows red after reaching to a thresold value.
 
 - *Add these features and I'll merge the PR*
 - *If you are a frontend dev, you can create a frontend for this project and integrate it*
