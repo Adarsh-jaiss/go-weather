@@ -1,0 +1,23 @@
+name: go-weather
+version: '1.0'
+summary: CLI app for checking the weather
+description: A CLI app written in Go that provides current weather information.
+
+base: core18
+grade: stable
+confinement: strict
+
+apps:
+  go-weather:
+    command: ./weathercli
+    plugs: [network]
+
+parts:
+  go-weather:
+    source: https://github.com/Adarsh-jaiss/go-weather
+    source-tag: v1.0  
+    plugin: go
+    go-importpath: github.com/Adarsh-jaiss/go-weather
+    build-packages:
+      - gcc
+
